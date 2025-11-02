@@ -1,0 +1,36 @@
+<h1 align="center">Configurable Shields</h1>
+<p align="center">Simple plugin to make shields configurable.</p>
+<br>
+
+# What the plugin allows you to do:
+
+- Add items to disable shields with, each item can have its own cooldown (in ticks) overriding the vanilla one 
+- Modify the vanilla shield cooldown to your liking
+
+<br>
+<br>
+
+# CONFIG
+
+The config is as follows:
+
+```
+# ConfigurableShields config.
+# Uses MiniMessage for coloring. Take a look at https://webui.advntr.dev/
+
+shields:
+  cooldown: 20 # The default shield cooldown in ticks. This overrides the vanilla one, ticks are amountofseconds * 20.
+
+
+messages:
+  # A customizable reload message is better than nothing.
+  reload: "<dark_green>Reloaded successfully!</dark_green>"
+
+
+# List of additional items to allow disabling the shield with followed by their cooldown in ticks, overrides the cooldown above,
+# NAMES MUST BE UPPERCASE. List available at https://jd.papermc.io/paper/1.21.10/org/bukkit/Material.html
+
+items:
+# WOODEN_SWORD: 20 <- As you can see here, it's the item enum name followed by the cooldown in ticks for it. this will disable the shield for a second (20 ticks = 1 s) when hit by a wooden sword
+  NETHER_STAR: 5
+```
