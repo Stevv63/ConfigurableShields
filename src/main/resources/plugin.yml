@@ -1,0 +1,17 @@
+name: ConfigurableShields
+version: '1.0.0'
+main: stev6.ConfigurableShields.ConfigurableShields
+api-version: '1.21'
+prefix: ConfigurableShields
+authors: [ Stev6 ]
+description: Make shields more configurable!
+commands:
+  configurableshields:
+    description: ConfigurableShields command.
+    usage: "/<command> reload"
+    permission: configurableshields.admin
+
+permissions:
+  configurableshields.admin:
+    description: Admin permission for ConfigurableShields
+    default: op
